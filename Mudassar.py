@@ -57,32 +57,14 @@ def approval():
 
     else:
 
-      print(" \033[1;92m 》\033[1;97mYour Token : "+id)
+      print("\33[1;32m \033[1;92m 》\033[1;97mYour Token is Successfully Approved")
 
-      print('\33[1;32m--------------------------------------------------')
+      msg = str(os.geteuid())
 
-      print("\33[1;32m\033[1;92m  》\033[1;97mKSI BI SORAT ME PAISE WAPIS NHI HO GE")
+      time.sleep(0.5)
 
-      print("\33[1;32m--------------------------------------------------")
-
-      print("\33[1;32m\033[1;92m  》\033[1;97mPAKISTAN'S 15 DAYS       \033[1;92m 》 \033[1;97mPRICE 250 PKR")
-      
-      print("\33[1;32m\033[1;92m  》\033[1;97mPAKISTAN'S MONTHLY       \033[1;92m 》 \033[1;97mPRICE 400 PKR")
-      
-      print('\33[1;32m--------------------------------------------------')
-      
-      print("\33[1;32m\033[1;92m  》\033[1;97mOTHER COUNTRY 15 DAYS    \033[1;92m 》 \033[1;97mPRICE 3 DOLLAR")
-      
-      print("\33[1;32m\033[1;92m  》\033[1;97mOTHER COUNTRY MONTHLY     \033[1;92m》 \033[1;97mPRICE 5 DOLLAR")
-
-      print('\33[1;32m--------------------------------------------------')
-      input(' \033[1;92m 》\033[1;97mPRESS ENTER FOR SEND KEY TO ADMIN ')
-
-      tks = ('Hello%20MUDASSAR%20BHAI%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+923231774792?text='+tks),approval()
-
-      time.sleep(1)
-
-      approval()
+      menu()
+      pass
 
   except:
 
